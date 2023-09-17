@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>背景音乐</title>
+<style type="text/css">
+.changeColor{
+        animation-name: anim1;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+}
+ 
+@keyframes anim1{
+        0% {
+   background: linear-gradient(1deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);//背景色
+   color:white; //文字颜色
+        }
+        25% {
+   background: linear-gradient(60deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+   color:orange;
+        }
+        50% {
+   background: linear-gradient(120deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+   color:black;
+        }
+        75% {
+   background: linear-gradient(60deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+   color:blue;
+        }
+        100% {
+   background: linear-gradient(1deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+   color:white;
+        }
+}
+</style>
+</head>
+<body>
+	<audio src="./Mr.16罗隽永、Simyee陈芯怡 - 不需要挽留 (Move On).mp3" autoplay="autoplay" loop="loop"></audio>
+<div class="changeColor"><font size="8">不需要挽留</font></div>
+</body>
+</html>

@@ -1,113 +1,154 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>小帅前端测试用</title>
-<embed src="./未知歌手 - 太空旋律 (DJ版片段).mp3" hidden="true" autostart="true" loop="true">
-<style type="text/css">
-.changeColor{
-        animation-name: anim1;
-        animation-direction: alternate;
-        animation-timing-function: linear;
-        animation-delay: 0s;
-        animation-iteration-count: infinite;
-        animation-duration: 10s;
-}
+<html lang="en">
  
-@keyframes anim1{
-        0% {
-   background: linear-gradient(1deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);//背景色
-   color:white; //文字颜色
-        }
-        25% {
-   background: linear-gradient(60deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-   color:orange;
-        }
-        50% {
-   background: linear-gradient(120deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-   color:black;
-        }
-        75% {
-   background: linear-gradient(60deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-   color:blue;
-        }
-        100% {
-   background: linear-gradient(1deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-   color:white;
-        }
-}
-</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小帅本帅</title>
 </head>
-<body>	
-	<audio src="./未知歌手 - 太空旋律 (DJ版片段).mp3" autoplay="autoplay" loop="loop" controls></audio>
-        <div class="changeColor">
-	<font size="8">广西没有雪!</font>
-	<br>
-	<font size="8">贵港没有爱！</font>
-	<br>
-	<font size="8">龙争虎斗彼岸花！</font>
-	<br>
-	<font size="8">这里才是你的家！</font>
-	<br>
-	<font size="8">广西柳州市全顺电器科技有限公司</font>
-        <br>
-	<font size="8">无全顺不摸车，无电摩不青春！</font>
-	<br>
-	<font size="8">韦宝金同学祝所有老铁顺风顺水顺财神！</font>
-	<br>
-	<font size="8">祝老铁们在以后的日子里顺顺利利，一路长红！</font>
-	<br>
-	<font size="8">安排！！！</font>
-	<br>
+ 
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        /* 设置可视窗口的宽高 */
+        body {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            background-color: pink;
+        }
+ 
+        .container {
+            position: absolute;
+            width: 1000px;
+            height: 500px;
+            top: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 1000px;
+        }
+ 
+        .box {
+            width: 150px;
+            height: 150px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: run 10s linear infinite;
+        }
+ 
+        .circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150px;
+            height: 150px;
+        }
+ 
+        /*设置图像大小、边框、圆角、位置*/
+        .circle img {
+            width: 200px;
+            height: 150px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+ 
+        .circle1 {
+            transform: translateZ(500px);
+        }
+ 
+        .circle2 {
+            transform: rotateY(36deg) translateZ(500px);
+        }
+ 
+        .circle3 {
+            transform: rotateY(72deg) translateZ(500px);
+        }
+ 
+        .circle4 {
+            transform: rotateY(108deg) translateZ(500px);
+        }
+ 
+        .circle5 {
+            transform: rotateY(144deg) translateZ(500px);
+        }
+ 
+        .circle6 {
+            transform: rotateY(180deg) translateZ(500px);
+        }
+ 
+        .circle7 {
+            transform: rotateY(216deg) translateZ(500px);
+        }
+ 
+        .circle8 {
+            transform: rotateY(252deg) translateZ(500px);
+        }
+ 
+        .circle9 {
+            transform: rotateY(288deg) translateZ(500px);
+        }
+ 
+        .circle10 {
+            transform: rotateY(324deg) translateZ(500px);
+        }
+ 
+        @keyframes run {
+            0% {
+                transform: rotateY(0);
+            }
+ 
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
+ 
+    <body>
+        <div class="container">
+            <div class="box">
+                <div class="circle circle1">
+                    <img src="./微信图片_111.jpg" alt="">
+                </div>
+                <div class="circle circle2">
+                    <img src="./微信图片_222.jpg" alt="">
+                </div>
+                <div class="circle circle3">
+                    <img src="./微信图片_333.jpg" alt="">
+                </div>
+                <div class="circle circle4">
+                    <img src="./微信图片_20230908163119.jpg" alt="">
+                </div>
+                <div class="circle circle5">
+                    <img src="./微信图片_20230908172859.jpg" alt="">
+                </div>
+                <div class="circle circle6">
+                    <img src="./动图.gif" alt="">
+                </div>
+                <div class="circle circle7">
+                    <img src="./微信图片_111.jpg" alt="">
+                </div>
+                <div class="circle circle8">
+                    <img src="./微信图片_333.jpg" alt="">
+                </div>
+                <div class="circle circle9">
+                    <img src="./QQ图片20230915190111.gif" alt="">
+                </div>
+                <div class="circle circle10">
+                    <img src="./微信图片_20230908163119.jpg" alt="">
+                </div>
+            </div>
         </div>
-	<img src="./动图.gif" alt="动图" alt="111" width="100%" height="50%">
-	<img src="./微信图片_20230908163119.jpg" alt="动图" width="600" height="600">
-	<img src="./微信图片_20230908172859.jpg" alt="111" width="600" height="600">
-	<br>
-	<br>
-	<img src="./60a408185dd1aa4c8aa863471cf2f0e1.jpeg" alt="111" width="100%" height="500">
-		<br>
-		<a href="https://www.quyoubbk.com" target="_blank"><font size="8">真传奇——是兄弟就来砍我</font></a>
-		<br>
-		<a href="https://www.quyoubbk.com" target="_blank"><font size="8">只玩真传奇——一刀9999999999999</font></a>
-		<br>
-		<a href="https://www.quyoubbk.com" target="_blank"><font size="8">成龙大哥代言——爆率超高，极品装备随便爆</font></a>
-		<br>
-		<a href="https://www.quyoubbk.com" target="_blank"><font size="8">我是渣渣辉，今晚一起来攻城</font></a>
-		<br>
-		<a href="https://www.quyoubbk.com" target="_blank"><font size="8">散人当大哥，零充也能玩，一刀99999999亿亿</font></a>
-	<table width="600" hight="300" border="1">
-			<tr>
-				<td>百度</td>
-				<td>QQ</td>
-				<td>微信</td>
-			</tr>
-			<tr>
-				<td>淘宝</td>
-				<td>阿里88</td>
-				<td>联想</td>
-			</tr>
-			<tr>
-				<td>爱奇艺</td>
-				<td>抖音</td>
-				<td>快手</td>
-			</tr>
-			<tr>
-				<td>小红书</td>
-				<td>小黄书</td>
-				<td>小蓝书</td>
-			</tr>
-		</table>
-	<h1>我是1级标签</h1>
-		<p>小美小美小美小美小美<b><i>小美小美</i></b>小美小美小美小美小美</p>
-		<hr>
-		<hr color="red">
-		<hr color="green" width="50%" size="10" align="left">
-		<hr color="green" width="50%" size="10" align="centre">
-		<hr color="green" width="50%" size="10" align="right">
-		<p>小丽小丽小丽小丽小丽小丽小丽小丽小丽小丽小丽小丽</p>
-		<h2>我是2级标签</h2>
-		<hr color="blue" size="10">
-		<h3>我是3级标签</h3>
-	
-</body>
+	 <audio src="./未知歌手 - 太空旋律 (DJ版片段).mp3" autoplay loop></audio>   
+    </body>
 </html>
